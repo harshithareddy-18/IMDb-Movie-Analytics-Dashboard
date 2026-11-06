@@ -347,3 +347,18 @@ else:
         if not rating_col:
             st.warning("The provided CSV has no IMDb rating field. The minimum-rating control is shown but cannot be used to verify or filter ratings.")
         st.dataframe(pd.DataFrame([movie]).drop(columns=["_genres", "_countries"], errors="ignore"), use_container_width=True)
+
+
+# Footer
+st.divider()
+
+st.markdown(
+    """
+    <div style="text-align: center; padding: 15px;">
+        <p><b>Created by Harshitha Reddy</b></p>
+        <p>Section: 1</p>
+        <p>Date: 06-11-2026</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
